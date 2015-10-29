@@ -1,0 +1,25 @@
+{
+  "name": "hrm-image-encoder",
+  "version": "0.1.0",
+  "description": "An image encoder for Human Resource Machine programs",
+  "main": "hrm-image-encoder.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nrkn/hrm-image-encoder.git"
+  },
+  "keywords": [
+    "hrm",
+    "human",
+    "resouce",
+    "machine",
+    "program",
+    "image",
+    "encoder"
+  ],
+  "author": "Nik Coughlin <nrkn.com@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nrkn/hrm-image-encoder/issues"
+  },
+  "homepage": "https://github.com/nrkn/hrm-image-encoder#readme"
+}

@@ -30,7 +30,7 @@ module.exports = function( paths ){
   
   var deflated = zlib.deflateSync( buffer )
   
-  var toBase64 = deflated.toString( 'base64' ).replace( /=/g, ';' )
+  var toBase64 = deflated.toString( 'base64' ).replace( /=/g, '' ) + ';'
   
   var split = toBase64.match( /.{1,80}/g ).join( '\n' )
   

@@ -1,6 +1,6 @@
 {
   "name": "hrm-image-encoder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An image encoder for Human Resource Machine programs",
   "main": "hrm-image-encoder.js",
   "repository": {

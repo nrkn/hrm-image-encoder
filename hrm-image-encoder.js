@@ -1,9 +1,9 @@
 var zlib = require( 'zlib' )
 
 module.exports = function( paths ){
-  var len = paths.reduce( ( l, p ) =>
-    l + p.length, 0 
-  ) + paths.length
+  var len = paths.reduce( function( l, p ){
+    return l + p.length
+  }, 0 ) + paths.length
   
   //might be nice to truncate instead - PR welcomed!
   if( len > 255 )
@@ -17,8 +17,8 @@ module.exports = function( paths ){
   
   var offset = 4
   
-  paths.forEach( path => {
-    path.forEach( point => {
+  paths.forEach( function( path ){
+    path.forEach( function( point ){
       buffer.writeUInt16LE( point[ 0 ], offset )
       offset += 2
       buffer.writeUInt16LE( point[ 1 ], offset )
